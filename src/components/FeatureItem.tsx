@@ -1,8 +1,14 @@
 import React from 'react';
 
-function FeatureItem({ icon, title, children }) {
+interface FeatureItemProps {
+    icon: React.ReactNode;
+    title: string;
+    children: React.ReactNode;
+}
+
+function FeatureItem({ icon, title, children }: FeatureItemProps) {
     return (
-        <div className="feature" tabIndex="0">
+        <div className="feature" tabIndex={0}>
             <div className="feature-icon" aria-hidden="true">
                 {icon}
             </div>

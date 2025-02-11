@@ -1,6 +1,5 @@
-import React from 'react';
-import iconImage from '../images/icon.png';
-import { IconShowcaseData } from './serverData';
+import iconImage from '/icon.webp';
+import { IconShowcaseData } from './serverData.tsx';
 
 function IconShowcase() {
     const { title, description } = IconShowcaseData;

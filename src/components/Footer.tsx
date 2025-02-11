@@ -1,5 +1,4 @@
-import React from 'react';
-import { footerText } from './serverData';
+import { footerText } from './serverData.tsx';
 
 function Footer() {
     return (
