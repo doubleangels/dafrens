@@ -1,8 +1,7 @@
-import React from 'react';
-import { joinData } from './serverData';
+import { joinData } from './serverData.tsx';
 
-function Join() 
-{   const { title, description } = joinData;
+function Join() {
+    const { title, description } = joinData;
     return (
         <section className="join-section">
             <h2>{title}</h2>

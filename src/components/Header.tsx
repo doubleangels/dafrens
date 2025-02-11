@@ -1,5 +1,4 @@
-import React from 'react';
-import { communityTagline } from './serverData';
+import { communityTagline } from './serverData.tsx';
 
 function Header() {
     return (

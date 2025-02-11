@@ -1,6 +1,5 @@
-import React from 'react';
 import FeatureItem from './FeatureItem';
-import { featuresData } from './serverData';
+import { featuresData } from './serverData.tsx';
 
 function Features() {
     return (
