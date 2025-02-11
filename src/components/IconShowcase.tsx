@@ -1,4 +1,4 @@
-import iconImage from '../../public/icon.webp';
+import iconImage from '/icon.webp';
 import { IconShowcaseData } from './serverData.tsx';
 
 function IconShowcase() {
