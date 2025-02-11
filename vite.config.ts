@@ -11,7 +11,7 @@ export default defineConfig({
     sentryVitePlugin({
       org: "doubleangels",
       project: "dafrens"
-    })
+    }),
   ],
 
   build: {
