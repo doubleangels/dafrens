@@ -1,11 +1,11 @@
-import { useEffect } from 'react';
-import Header from './components/Header';
-import IconShowcase from './components/IconShowcase';
-import VibeRules from './components/VibeRules';
-import Features from './components/Features';
-import Embed from './components/Embed';
-import Join from './components/Join';
-import Footer from './components/Footer';
+import { Suspense, lazy, useEffect } from 'react';
+const LazyHeader = lazy(() => import('./components/Header'));
+const LazyIconShowcase = lazy(() => import('./components/IconShowcase'));
+const LazyVibeRules = lazy(() => import('./components/VibeRules'));
+const LazyFeatures = lazy(() => import('./components/Features'));
+const LazyEmbed = lazy(() => import('./components/Embed'));
+const LazyJoin = lazy(() => import('./components/Join'));
+const LazyFooter = lazy(() => import('./components/Footer'));
 
 function App() {
   useEffect(() => {
@@ -32,15 +32,15 @@ function App() {
   }, []);
 
   return (
-    <div>
-      <Header />
-      <IconShowcase />
-      <VibeRules />
-      <Features />
-      <Embed />
-      <Join />
-      <Footer />
-    </div>
+    <Suspense fallback={<div>Loading...</div>}>
+      <LazyHeader />
+      <LazyIconShowcase />
+      <LazyVibeRules />
+      <LazyFeatures />
+      <LazyEmbed />
+      <LazyJoin />
+      <LazyFooter />
+    </Suspense>
   );
 }
 
