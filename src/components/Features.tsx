@@ -1,5 +1,5 @@
 import FeatureItem from './FeatureItem';
-import { featuresData } from './serverData.tsx';
+import { featuresData } from './data.tsx';
 
 function Features() {
     return (

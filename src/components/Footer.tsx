@@ -1,4 +1,4 @@
-import { footerText } from './serverData.tsx';
+import { footerText } from './data.tsx';
 
 function Footer() {
     return (

@@ -1,4 +1,4 @@
-import { joinData } from './serverData.tsx';
+import { joinData } from './data.tsx';
 
 function Join() {
     const { title, description } = joinData;
