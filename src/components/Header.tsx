@@ -1,4 +1,4 @@
-import { communityTagline } from './serverData.tsx';
+import { communityTagline } from './data.tsx';
 
 function Header() {
     return (

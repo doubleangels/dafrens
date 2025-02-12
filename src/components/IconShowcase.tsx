@@ -1,5 +1,5 @@
 import iconImage from '/icon.webp';
-import { IconShowcaseData } from './serverData.tsx';
+import { IconShowcaseData } from './data.tsx';
 
 function IconShowcase() {
     const { title, description } = IconShowcaseData;

@@ -1,4 +1,4 @@
-import { vibeRulesData } from './serverData';
+import { vibeRulesData } from './data';
 
 function VibeRules() {
     const { title, rules, note } = vibeRulesData;
