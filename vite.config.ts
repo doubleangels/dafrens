@@ -13,8 +13,17 @@ export default defineConfig({
       project: "dafrens"
     }),
   ],
-
   build: {
-    sourcemap: true
+    sourcemap: true,
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (id.includes('node_modules')) {
+            const packageName = id.split('node_modules/')[1].split('/')[0];
+            return `vendor-${packageName}`;
+          }
+        }
+      }
+    }
   }
 })
