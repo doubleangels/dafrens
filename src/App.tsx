@@ -1,10 +1,12 @@
 import { Suspense, lazy, useEffect } from 'react';
 const LazyHeader = lazy(() => import('./components/Header'));
-const LazyIconShowcase = lazy(() => import('./components/IconShowcase'));
+const LazyGifShowcase = lazy(() => import('./components/GifShowcase'));
 const LazyVibeRules = lazy(() => import('./components/VibeRules'));
 const LazyFeatures = lazy(() => import('./components/Features'));
 const LazyEmbed = lazy(() => import('./components/Embed'));
+const LazySection = lazy(() => import('./components/Section'));
 const LazyJoin = lazy(() => import('./components/Join'));
+const LazyAppeal = lazy(() => import('./components/Appeal'));
 const LazyFooter = lazy(() => import('./components/Footer'));
 
 function App() {
@@ -34,11 +36,14 @@ function App() {
   return (
     <Suspense fallback={<div>Loading...</div>}>
       <LazyHeader />
-      <LazyIconShowcase />
+      <LazyGifShowcase />
       <LazyVibeRules />
       <LazyFeatures />
       <LazyEmbed />
-      <LazyJoin />
+      <LazySection>
+        <LazyJoin />
+        <LazyAppeal />
+      </LazySection>
       <LazyFooter />
     </Suspense>
   );

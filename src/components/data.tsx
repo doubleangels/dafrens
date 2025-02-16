@@ -1,6 +1,6 @@
 export const communityTagline = "A community for gamers, banter, and Frens—where sarcasm meets a surprising amount of heart!";
 
-export const IconShowcaseData = {
+export const gifShowcaseData = {
     title: "Congrats! You’ve found Da Frens!",
     description: `We keep it real and just the right amount of weird—with the occasional overshare. 
                 Expect hot banter, sweaty games, and zero trainwrecks! Join us and discover 
@@ -61,5 +61,13 @@ export const joinData = {
                 flow like fine wine. We’re rowdy, but it’s all in good fun—just watch your 
                 back if you can’t handle a friendly roast or two (it’s how we show love!).`,
 };
+
+export const appealData = {
+    title: 'Managed to get hit with a ban?',
+    description: `It takes a lot to be banned from Da Frens, but if you’ve managed to do it
+                (congrats?), you can appeal your ban here. Just remember, we might not take
+                you back if you were a real vibe-killer!`, 
+};
+
 
 export const footerText = `© ${new Date().getFullYear()} Da Frens.`;
