@@ -3,7 +3,7 @@ import { joinData } from './data.tsx';
 function Join() {
     const { title, description } = joinData;
     return (
-        <section className="join-section">
+        <div className='join-section'>
             <h2>{title}</h2>
             <p>{description}</p>
             <a
@@ -13,7 +13,7 @@ function Join() {
             >
                 Join Discord
             </a>
-        </section>
+        </div>
     );
 }
 

@@ -62,4 +62,12 @@ export const joinData = {
                 back if you can’t handle a friendly roast or two (it’s how we show love!).`,
 };
 
+export const appealData = {
+    title: 'Managed to get hit with a ban?',
+    description: `It takes a lot to be banned from Da Frens, but if you’ve managed to do it
+                (congrats?), you can appeal your ban here. Just remember, we might not take
+                you back if you were a real vibe-killer!`, 
+};
+
+
 export const footerText = `© ${new Date().getFullYear()} Da Frens.`;

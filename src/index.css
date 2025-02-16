@@ -1,5 +1,4 @@
-/* Light Mode Variables */
-:root {
+* Light Mode Variables */:root {
   --primary-color: #cd41ff;
   --secondary-color: #b032d0;
   --accent-color: #e174ff;
@@ -226,8 +225,8 @@ iframe {
   }
 }
 
-/* Join Section */
-.join-section {
+/* Section */
+.section {
   text-align: center;
   padding: 3rem 1.5rem;
   background: var(--white);
@@ -235,18 +234,23 @@ iframe {
   margin-top: 2rem;
 }
 
-.join-section h2 {
+.section h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
 
-.join-section p {
+.section p {
   font-size: 1rem;
   margin-bottom: 2rem;
   color: #828e97;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* Join */
+.join-section {
+  margin-bottom: 4rem;
 }
 
 .join-btn {
@@ -260,6 +264,21 @@ iframe {
 }
 
 .join-btn:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Appeal */
+.appeal-btn {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 1rem 2rem;
+  font-weight: 600;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.appeal-btn:hover {
   background-color: var(--secondary-color);
 }
 
