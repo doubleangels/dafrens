@@ -79,8 +79,20 @@ header p {
   color: #ffffff;
 }
 
-/* Icon Showcase */
-.icon-showcase {
+/* Header Icon */
+.header-icon {
+  display: block;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 1px 4px var(--box-shadow-color);
+  margin: 1rem auto;
+  transition: transform 0.3s ease;
+}
+
+/* GIF Showcase */
+.gif-showcase {
   text-align: center;
   padding: 2rem 1.5rem;
   background-color: var(--white);
@@ -90,29 +102,29 @@ header p {
   border-radius: 8px;
 }
 
-.icon-showcase h2 {
+.gif-showcase h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
 
-.icon-showcase p {
+.gif-showcase p {
   font-size: 1rem;
   margin: 1rem auto;
   max-width: 600px;
   color: #828e97;
 }
 
-.icon-showcase img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
+.gif-showcase img {
+  width: 250px;
+  height: 250px;
+  border-radius: 20%;
   object-fit: cover;
   box-shadow: 0 1px 4px var(--box-shadow-color);
   margin: 1rem 0;
   transition: transform 0.3s ease;
 }
 
-.icon-showcase img:hover {
+.gif-showcase img:hover {
   transform: scale(1.05);
 }
 

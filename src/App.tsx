@@ -1,6 +1,6 @@
 import { Suspense, lazy, useEffect } from 'react';
 const LazyHeader = lazy(() => import('./components/Header'));
-const LazyIconShowcase = lazy(() => import('./components/IconShowcase'));
+const LazyGifShowcase = lazy(() => import('./components/GifShowcase'));
 const LazyVibeRules = lazy(() => import('./components/VibeRules'));
 const LazyFeatures = lazy(() => import('./components/Features'));
 const LazyEmbed = lazy(() => import('./components/Embed'));
@@ -36,7 +36,7 @@ function App() {
   return (
     <Suspense fallback={<div>Loading...</div>}>
       <LazyHeader />
-      <LazyIconShowcase />
+      <LazyGifShowcase />
       <LazyVibeRules />
       <LazyFeatures />
       <LazyEmbed />

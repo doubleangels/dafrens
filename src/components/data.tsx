@@ -1,6 +1,6 @@
 export const communityTagline = "A community for gamers, banter, and Frens—where sarcasm meets a surprising amount of heart!";
 
-export const IconShowcaseData = {
+export const gifShowcaseData = {
     title: "Congrats! You’ve found Da Frens!",
     description: `We keep it real and just the right amount of weird—with the occasional overshare. 
                 Expect hot banter, sweaty games, and zero trainwrecks! Join us and discover 
