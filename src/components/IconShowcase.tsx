@@ -4,7 +4,7 @@ import { IconShowcaseData } from './data.tsx';
 function IconShowcase() {
     const { title, description } = IconShowcaseData;
     return (
-        <section className="icon-showcase">
+        <section className="icon-showcase" aria-label='Da Frens server icon'>
             <h2>{title}</h2>
             <img
                 src={iconImage}

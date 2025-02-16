@@ -1,6 +1,6 @@
 function Embed() {
     return (
-        <section className="embed" aria-label="Discord embed from Da Frens Community">
+        <section className="embed" aria-label="Discord embed from Da Frens server">
             <iframe
                 title="embed"
                 src="https://discord.com/widget?id=691991366615564388&theme=dark"

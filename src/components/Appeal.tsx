@@ -3,7 +3,7 @@ import { appealData } from './data.tsx';
 function Appeal() {
     const { title, description } = appealData;
     return (
-        <div>
+        <div aria-label="Appeal Discord ban">
             <h3>{title}</h3>
             <p>{description}</p>
             <a

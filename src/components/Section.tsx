@@ -6,7 +6,7 @@ interface SectionProps {
 
 function Section({ children }: SectionProps) {
   return (
-    <section className="section" aria-label="Appeal Ban">
+    <section className="section">
       {children}
     </section>
   );

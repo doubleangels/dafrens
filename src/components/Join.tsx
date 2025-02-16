@@ -3,7 +3,7 @@ import { joinData } from './data.tsx';
 function Join() {
     const { title, description } = joinData;
     return (
-        <div className='join-section'>
+        <div className='join-section' aria-label='Join Da Frens Discord server'>
             <h2>{title}</h2>
             <p>{description}</p>
             <a

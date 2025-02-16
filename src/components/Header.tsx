@@ -2,7 +2,7 @@ import { communityTagline } from './data.tsx';
 
 function Header() {
     return (
-        <header>
+        <header aria-label='Da Frens Community'>
             <h1>Welcome to Da Frens!</h1>
             <p>{communityTagline}</p>
             <a

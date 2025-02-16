@@ -3,7 +3,7 @@ import { vibeRulesData } from './data';
 function VibeRules() {
     const { title, rules, note } = vibeRulesData;
     return (
-        <section className="vibe-rules-section" aria-label="Server Culture and Rules">
+        <section className="vibe-rules-section" aria-label="Server culture and rules">
             <h2>{title}</h2>
             <ul>
                 {rules.map((rule, index) => (
