@@ -48,7 +48,6 @@ function App() {
           <LazyFooter />
         </main>
       </Suspense>
-      <div className="fixed inset-0 bg-[url('/grid-pattern.png')] bg-repeat opacity-5 pointer-events-none z-[1]"></div>
     </div>
   );
 }
