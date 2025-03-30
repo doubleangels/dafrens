@@ -1,6 +1,6 @@
 import { Suspense, lazy, useEffect } from 'react';
 import Header from './components/Header';
-const LazyGifShowcase = lazy(() => import('./components/GifShowcase'));
+const LazyGifShowcase = lazy(() => import('./components/GIFShowcase'));
 const LazyVibeRules = lazy(() => import('./components/VibeRules'));
 const LazyFeatures = lazy(() => import('./components/Features'));
 const LazyEmbed = lazy(() => import('./components/Embed'));

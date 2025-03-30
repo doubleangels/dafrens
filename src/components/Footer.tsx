@@ -1,4 +1,4 @@
-import { footerText } from './data.tsx';
+import { data } from './data.tsx';
 
 function Footer() {
     const year = new Date().getFullYear();
@@ -13,20 +13,13 @@ function Footer() {
                 <div className="flex flex-col md:flex-row justify-between items-center">
                     <div className="mb-6 md:mb-0">
                         <div className="flex items-center">
-                            {/* You can add a small logo here if available */}
                             <span className="font-bold text-white text-lg">Da Frens</span>
                         </div>
                     </div>
                     
                     <div className="flex flex-col md:flex-row gap-8 mb-8 md:mb-0">
-                        <a href="https://discord.com" className="text-gray-400 hover:text-[#cd41ff] transition-colors" target="_blank" rel="noopener noreferrer">
-                            Discord
-                        </a>
-                        <a href="#" className="text-gray-400 hover:text-[#cd41ff] transition-colors">
-                            Terms
-                        </a>
-                        <a href="#" className="text-gray-400 hover:text-[#cd41ff] transition-colors">
-                            Privacy
+                        <a href={data.footerData.disboardURL} className="text-gray-400 hover:text-[#cd41ff] transition-colors" target="_blank" rel="noopener noreferrer">
+                            {data.footerData.disboardText}
                         </a>
                     </div>
                 </div>
@@ -34,17 +27,8 @@ function Footer() {
                 <div className="pt-8 border-t border-gray-800/30 mt-8">
                     <div className="flex flex-col md:flex-row justify-between items-center">
                         <p className="text-gray-500 text-sm">
-                            © {year} {footerText}
+                            © {year} {data.footerData.footerText}
                         </p>
-                        <div className="mt-4 md:mt-0 flex space-x-4">
-                            {/* Social icons (can be replaced with actual icons) */}
-                            <a href="#" className="text-gray-400 hover:text-[#cd41ff] transition-colors" aria-label="Twitter">
-                                <span className="w-5 h-5">𝕏</span>
-                            </a>
-                            <a href="#" className="text-gray-400 hover:text-[#cd41ff] transition-colors" aria-label="GitHub">
-                                <span className="w-5 h-5">GH</span>
-                            </a>
-                        </div>
                     </div>
                 </div>
             </div>

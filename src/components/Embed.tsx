@@ -1,13 +1,15 @@
+import { data } from "./data";
+
 function Embed() {
     return (
         <section className="py-16 px-4 relative" aria-label="Discord embed from Da Frens server">
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-10">
                     <h2 className="text-3xl font-bold mb-4 bg-gradient-to-r from-[#cd41ff] to-purple-400 bg-clip-text text-transparent">
-                        Join Our Community
+                        {data.embedData.embedTitle}
                     </h2>
                     <p className="text-lg text-gray-300 max-w-3xl mx-auto">
-                        Preview our Discord server and see what's happening right now
+                        {data.embedData.embedDescription}
                     </p>
                 </div>
                 
