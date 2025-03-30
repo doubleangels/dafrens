@@ -1,5 +1,6 @@
 import { Suspense, lazy, useEffect } from 'react';
-import Header from './components/Header';
+import { Analytics } from "@vercel/analytics/react"
+const LazyHeader = lazy(() => import ('./components/Header'));
 const LazyGifShowcase = lazy(() => import('./components/GIFShowcase'));
 const LazyVibeRules = lazy(() => import('./components/VibeRules'));
 const LazyFeatures = lazy(() => import('./components/Features'));
@@ -10,28 +11,8 @@ const LazyAppeal = lazy(() => import('./components/Appeal'));
 const LazyFooter = lazy(() => import('./components/Footer'));
 
 function App() {
-  useEffect(() => {
-    const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-
-    function applyPreferredTheme(e: MediaQueryList | MediaQueryListEvent) {
-      if (e.matches) {
-        document.body.classList.add('dark');
-      } else {
-        document.body.classList.remove('dark');
-      }
-    }
-
-    applyPreferredTheme(darkModeMediaQuery);
-    darkModeMediaQuery.addEventListener('change', applyPreferredTheme);
-
-    return () => {
-      darkModeMediaQuery.removeEventListener('change', applyPreferredTheme);
-    };
-  }, []);
-
   return (
     <div className="min-h-screen bg-[#121214] text-gray-100 relative">
-      {/* Decorative background elements */}
       <div className="fixed inset-0 z-0 overflow-hidden">
         <div className="absolute -top-32 -left-32 w-64 h-64 bg-[#cd41ff]/20 rounded-full blur-3xl"></div>
         <div className="absolute top-1/2 -right-32 w-96 h-96 bg-[#cd41ff]/10 rounded-full blur-3xl"></div>
@@ -54,7 +35,8 @@ function App() {
         </div>
       }>
         <main className="flex flex-col relative z-10">
-          <Header />
+          <Analytics />
+          <LazyHeader />
           <LazyGifShowcase />
           <LazyVibeRules />
           <LazyFeatures />
@@ -66,8 +48,6 @@ function App() {
           <LazyFooter />
         </main>
       </Suspense>
-      
-      {/* Grid overlay for visual texture */}
       <div className="fixed inset-0 bg-[url('/grid-pattern.png')] bg-repeat opacity-5 pointer-events-none z-[1]"></div>
     </div>
   );
