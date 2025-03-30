@@ -1,7 +1,6 @@
 import { Suspense, lazy } from 'react';
-import { Analytics } from "@vercel/analytics/react"
-import { SpeedInsights } from '@vercel/speed-insights/next';
-const LazyHeader = lazy(() => import ('./components/Header'));
+import Header from './components/Header';
+import GIFShowcase from './components/GIFShowcase';
 const LazyVibeRules = lazy(() => import('./components/VibeRules'));
 const LazyFeatures = lazy(() => import('./components/Features'));
 const LazyEmbed = lazy(() => import('./components/Embed'));
@@ -21,7 +20,6 @@ function App() {
         <div className="hidden md:block absolute top-3/4 right-1/4 w-3 h-3 bg-[#cd41ff] rounded-full shadow-[#cd41ff] shadow-glow animate-pulse delay-700"></div>
         <div className="hidden md:block absolute bottom-1/3 left-10 w-1 h-1 bg-[#cd41ff] rounded-full shadow-[#cd41ff] shadow-glow animate-pulse delay-1000"></div>
       </div>
-      
       <Suspense fallback={
         <div className="flex items-center justify-center min-h-screen z-10 relative">
           <div className="text-center">
@@ -35,9 +33,8 @@ function App() {
         </div>
       }>
         <main className="flex flex-col relative z-10">
-          <Analytics />
-          <SpeedInsights />
-          <LazyHeader />
+          <Header />
+          <GIFShowcase />
           <LazyVibeRules />
           <LazyFeatures />
           <LazyEmbed />
