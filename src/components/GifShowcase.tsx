@@ -1,6 +1,6 @@
 import { data } from "./data";
 
-function GIFShowcase() {
+function GifShowcase() {
     return (
         <section className="relative mx-auto px-4 py-16 max-w-5xl" aria-label="Da Frens server showcase">
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -48,4 +48,4 @@ function GIFShowcase() {
     );
 }
 
-export default GIFShowcase;
+export default GifShowcase;

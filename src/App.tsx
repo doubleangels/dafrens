@@ -1,6 +1,6 @@
 import { Suspense, lazy } from 'react';
 import Header from './components/Header';
-import GIFShowcase from './components/GIFShowcase';
+import GifShowcase from './components/GifShowcase';
 const LazyVibeRules = lazy(() => import('./components/VibeRules'));
 const LazyFeatures = lazy(() => import('./components/Features'));
 const LazyEmbed = lazy(() => import('./components/Embed'));
@@ -34,7 +34,7 @@ function App() {
       }>
         <main className="flex flex-col relative z-10">
           <Header />
-          <GIFShowcase />
+          <GifShowcase />
           <LazyVibeRules />
           <LazyFeatures />
           <LazyEmbed />
