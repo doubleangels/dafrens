@@ -71,3 +71,4 @@ export const appealData = {
 
 
 export const footerText = `© ${new Date().getFullYear()} Da Frens.`;
+export const logoPath = '/icon-square-rounded.webp';

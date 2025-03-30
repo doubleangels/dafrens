@@ -6,7 +6,7 @@ interface SectionProps {
 
 function Section({ children }: SectionProps) {
   return (
-    <section className="section">
+    <section className="w-full max-w-7xl mx-auto px-4 md:px-6 py-12 md:py-16 relative z-10">
       {children}
     </section>
   );
