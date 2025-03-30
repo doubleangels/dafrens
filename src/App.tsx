@@ -1,7 +1,7 @@
-import { Suspense, lazy, useEffect } from 'react';
+import { Suspense, lazy } from 'react';
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from '@vercel/speed-insights/next';
 const LazyHeader = lazy(() => import ('./components/Header'));
-const LazyGifShowcase = lazy(() => import('./components/GIFShowcase'));
 const LazyVibeRules = lazy(() => import('./components/VibeRules'));
 const LazyFeatures = lazy(() => import('./components/Features'));
 const LazyEmbed = lazy(() => import('./components/Embed'));
@@ -36,8 +36,8 @@ function App() {
       }>
         <main className="flex flex-col relative z-10">
           <Analytics />
+          <SpeedInsights />
           <LazyHeader />
-          <LazyGifShowcase />
           <LazyVibeRules />
           <LazyFeatures />
           <LazyEmbed />
